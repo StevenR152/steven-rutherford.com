@@ -1,22 +1,506 @@
-<html>
-  <head>
-  	<title>A Crafty JS Game</title>
-  </head>
-  <body>
-    <div id="game"></div>
-	<style>
-	    body {
-	        background-color: #EEE;
-	        width: 800px; margin: 50px auto;
-	    }
-	    #game {
-	        box-shadow: 0px 0px 100px 100px rgba(0, 0, 0, .15);
-	    }
-    </style>
+<!DOCTYPE html>
+<html lang="en">
 
-    <script type="text/javascript" src="https://rawgithub.com/craftyjs/Crafty/release/dist/crafty-min.js"></script>
-    <script type="text/javascript" src="scenes/loading.js"></script>
-    <script type="text/javascript" src="scenes/game.js"></script>
-    <script type="text/javascript" src="main.js"></script>
-  </body>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Steven Rutherford - Portfolio</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <div  id="menu-toggle" class="btn btn-dark btn-md">
+     <ul class="list-unstyled">
+        <li class="list-item">
+            <a id="menu-click" href="#" title="Menu" class="toggle" >
+                <i class="fa fa-bars fa-2x"></i>
+            </a>
+        </li>
+        <li class="list-item scroll-hide hidden-xs hidden-sm">
+            <a href="https://www.linkedin.com/in/rutherfordsteven" title="Linked In">
+                <i class="fa fa-linkedin  fa-2x" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li class="list-item scroll-hide hidden-xs hidden-sm">
+            <a href="https://github.com/NZKiwi32" title="GitHub">
+                <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li class="list-item scroll-hide hidden-xs hidden-sm">
+            <a href="https://bitbucket.org/nzkiwi32" title="Bitbucket">
+                <i class="fa fa-bitbucket fa-2x" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+    </ul>
+
+    </div>
+   
+    <nav id="sidebar-wrapper">
+        <div>
+            <ul class="sidebar-nav">
+                <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+                <li class="sidebar-brand">
+                    <a href="#top"  onclick = $("#menu-close").click(); >Steven Rutherford</a>
+                </li>
+
+                 <ul class="menu-icons list-inline">
+                    <li class="list-item">
+                        <a href="https://www.linkedin.com/in/rutherfordsteven" title="Linked In">
+                            <i class="fa fa-linkedin  fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="https://github.com/NZKiwi32" title="GitHub">
+                            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="https://bitbucket.org/nzkiwi32" title="Bitbucket">
+                            <i class="fa fa-bitbucket fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <li>
+                    <a href="#top" onclick = $("#menu-close").click(); >Home</a>
+                </li>
+                <li>
+                    <a href="#about" onclick = $("#menu-close").click(); >About</a>
+                </li>
+                <li>
+                    <a href="#software" onclick = $("#menu-close").click(); >Software Engineer</a>
+                </li>
+                <li>
+                    <a href="#photography" onclick = $("#menu-close").click(); >Photography</a>
+                </li>
+                <li>
+                    <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+                </li>
+               
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>Steven Rutherford</h1>
+            <h3>Software Engineer. Enthusiast Photographer.</h3>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-12 text-center">
+                    <h2></h2>
+                    <p class="lead">I'm a <i>born and bred kiwi</i>, love to travel, use <i>photography to capture the moment</i> and <i>develop innovative and customer focused software</i>.</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="software" class="software bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Software Engineer</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-6">
+                            <div class="software-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Technology Domains</strong>
+                                </h4>
+                                <p>I specialise in <em>Ecommerce software</em> and <em>Web Development</em>.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="software-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Methodologies and Design</strong>
+                                </h4>
+                                <p>I guide and deliver projects using <em>Agile Methodologies</em>, which involves ongoing stakeholder interaction.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="software-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Tools</strong>
+                                </h4>
+                                <p>I develop using industry standards: <em>version control, testing, code analysis and build pipelines</em>.
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="software-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Coffee</strong>
+                                </h4>
+                                <p>I empower my progress through trusted sources.... <em>Coffee</em>.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <section id="skills" class="full-section-two bg-skills text-center">
+        <div class="container ">
+            <!-- Text Skills and Abilities -->
+            <h2 class="title-main mywhite">Skills &amp; Abilities.</h2>
+            <p class="text-main mywhite">The list of technologies I've used is extensive, but theres always more to learn and thats one of the best bits!</p>
+            
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4 col-md-2 separ">
+                    <div class="row">
+                        <div class="icon-skill"><img class="img-skill img-responsive" alt="css 3" src="img/Java_logo_small.png"></div>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-2 separ">
+                    <div class="row">
+                        <div class="icon-skill"><img class="img-skill img-responsive" alt="responsive" src="img/magento-logo_small.png"></div>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-2 separ">
+                    <div class="row">
+                        <div class="icon-skill"><img class="img-skill img-responsive" alt="css 3" src="img/html5_logo_small.png"></div>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-2 separ">
+                    <div class="row">
+                        <div class="icon-skill"><img class="img-skill img-responsive" alt="css 3" src="img/js_logo_small.png"></div>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-2 separ">
+                    <div class="row">
+                        <div class="icon-skill"><img class="img-skill img-responsive" alt="html 5" src="img/css_logo_small.png"></div>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-2 separ">
+                    <div class="row">
+                        <div class="icon-skill"><img class="img-skill img-responsive" alt="PHP" src="img/PHP-logo_small.png"></div>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-2 separ">
+                    <div class="row">
+                        <div class="icon-skill"><img class="img-skill img-responsive" alt="PHP" src="img/Ansible_Logo_small.png"></div>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-2 separ">
+                    <div class="row">
+                        <div class="icon-skill"><img class="img-skill img-responsive" alt="PHP" src="img/Vagrant_small.png"></div>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-2 separ">
+                    <div class="row">
+                        <div class="icon-skill"><img class="img-skill img-responsive" alt="PHP" src="img/docker_small.png"></div>
+                    </div>
+                </div>
+
+                <div class="col-xs-4 col-md-2 separ">
+                    <div class="row">
+                        <div class="icon-skill"><img class="img-skill img-responsive" alt="PHP" src="img/Solr_Logo_small.png"></div>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-2 separ">
+                    <div class="row">
+                        <div class="icon-skill"><img class="img-skill img-responsive" alt="PHP" src="img/lucene_logo_small.png"></div>
+                    </div>
+                </div>
+                <!-- // Skills percent -->
+            </div>
+        </div>
+        <!-- Abilities -->
+        <div class="container cont-mg">
+            <div class="row">
+                <!-- Col 1 - Software Skills -->
+                <div class="col-xs-6">
+                    <div class="cont-ab">
+                        <h4 class="title-four color-a">Software Skills</h4>
+                        <!-- Software Abilitie 1 -->
+                        <div class="row">
+                            <div class="col-md-12 text-awsm">Frontend Web (HTML5/CSS/JS) </div>
+                        </div>
+                        <!-- Software Abilitie 2 -->
+                        <div class="row">
+                            <div class="col-md-12 text-awsm">Software Engineering (PHP/Java)</div>
+                        </div>
+                        <!-- Software Abilitie 3 -->
+                        <div class="row">
+                            <div class="col-md-12 text-awsm">Magento Platform (Magento 1 &amp; 2) </div>
+                        </div>
+                        <!-- Software Abilitie 4 -->
+                        <div class="row">
+                            <div class="col-md-12 text-awsm">Build Automation (Vagrant/Ansible)</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Col 2 - Awesome Services -->
+                <div class="col-lg-6">
+                    <div class="cont-ab">
+                        <h4 class="title-four color-b">Personal Experience</h4>
+                        <!-- Awesome Abilities -->
+                        <div class="row">
+                            <div class="col-md-12 text-awsm">Unity 3D | Unreal Engine</div>
+                            <div class="col-md-12 text-awsm">NodeJS | CraftyJS</div>
+                            <div class="col-md-12 text-awsm">CoreOS | Docker</div>
+                            <div class="col-md-12 text-awsm">Mercurial | Bitbucket</div>
+                        </div>
+                        <!-- // Awesome Abilities -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // Abilities -->
+    </section>
+
+    <!-- Services -->
+    <section id="photography" class="software bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Enthusiast Photographer</h2>
+                    <hr class="small">
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Photography -->
+    <section id="photography-samples" class="photography">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-4 col-md-2">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/photography/small/IMG_1277.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-4 col-md-2">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/photography/small/IMG_9268.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-4 col-md-2">
+                            <div class="photography-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/photography/small/IMG_9541.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-4 col-md-2 ">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/photography/small/IMG_9603.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-4 col-md-2">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/photography/small/IMG_9761.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-4 col-md-2">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/photography/small/IMG_9918.png">
+                                </a>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Footer -->
+    <footer >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Steven Rutherford</strong>
+                    </h4>
+                    <p>Christchurch,<br>New Zealand</p>
+                    <ul class="list-unstyled">
+                        <!-- <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li> -->
+                     <!--    <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:steven@example.com">name@example.com</a>
+                        </li> -->
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://www.linkedin.com/in/rutherfordsteven" title="Linked In"><i class="fa fa-linkedin fa-fw fa-3x" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/NZKiwi32" title="GitHub"><i class="fa fa-github fa-fw fa-3x" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://bitbucket.org/nzkiwi32" title="Bitbucket"><i class="fa fa-bitbucket fa-fw fa-3x" aria-hidden="true"></i></a>
+                        </li>
+                        
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-click").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+(function TopMenu() {
+    var isHovered = false;
+    var shouldContract = false;
+    $('#menu-toggle').hover(function () {
+        $(this).find('.scroll-hide').css({
+                'display': 'block'
+        });
+        isHovered = true;
+    }, function () {
+         // Don't hide if in "default show zone"
+        if($(document).scrollTop() < 200) {
+            isHovered = false;
+            return;
+        }
+
+        $(this).find('.scroll-hide').css({
+                'display': 'none'
+        });
+        isHovered = false;
+    });
+
+    $(window).scroll(function() {
+        if(isHovered) return; // Hover override scroll.
+
+        if ($(this).scrollTop() > 200) { //use `this`, not `document`
+            $('.scroll-hide').css({
+                'display': 'none'
+            });
+        } else {
+             $('.scroll-hide').css({
+                'display': 'block'
+            });
+        }
+    });
+})();
+   
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80554594-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+
 </html>
