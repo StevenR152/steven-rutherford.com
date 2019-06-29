@@ -31,7 +31,11 @@ body {
     text-shadow: 2px 2px 3px rgba(240, 240, 240, 0.08);
 }
 
-.text-vertical-center h1:after {
+break-line {
+    position: relative;
+}
+
+.text-vertical-center .break-line:after {
     position: absolute;
     content: "";
     left: 15%;
@@ -56,8 +60,11 @@ body {
      text-shadow: 1px 1px 4px rgba(240, 240, 240, 0.08); 
 }
 
-.text-vertical-center h3 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: 100;
+}
+
+.text-vertical-center h3 {
     font-family: "Open Sans", "Proxima Nova ", "Segoe UI", "Opensans", "Roboto", "Helvetica", -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     line-height: 1.6;
@@ -83,6 +90,8 @@ hr.small {
 
 .call-to-action-header h3 {
     font-style: italic;
+    position: relative;
+    padding-bottom: 20px;
 }
 
 .header {
@@ -97,12 +106,6 @@ hr.small {
     -o-background-size: cover;
 }
 
-/* About */
-
-.about {
-    padding: 50px 0;
-}
-
 /* Services */
 
 .software {
@@ -111,6 +114,7 @@ hr.small {
 
 .software-item {
     margin-bottom: 30px;
+
 }
 
 /* Callout */
