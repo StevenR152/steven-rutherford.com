@@ -116,6 +116,7 @@ hr.small {
 }
 
 .software-item {
+    min-height: 390px;
     margin-bottom: 30px;
 
 }
