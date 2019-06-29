@@ -108,7 +108,9 @@ hr.small {
 }
 
 /* Services */
-
+.topic-header {
+    min-height: 52px;
+}
 .software {
     padding: 50px 0;
 }
