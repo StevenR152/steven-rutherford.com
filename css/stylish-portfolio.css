@@ -38,9 +38,9 @@ break-line {
 .text-vertical-center .break-line:after {
     position: absolute;
     content: "";
-    left: 15%;
+    left: 44%;
     bottom: 0;
-    width: 70%;
+    width: 12%;
     height: 1px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -84,7 +84,7 @@ hr.small {
 /* Header */
 .main-header h1 {
     position: relative;
-    padding-bottom: 3rem;
+    padding-bottom: 6rem;
     margin-bottom: 2rem;
 }
 
@@ -207,4 +207,31 @@ section#photography-samples .container {
 .menu-icons {
     padding-top: 10px;
     text-align: center;
+}
+
+/* The heading bar annimation.*/
+.skill-bar {
+    position: relative;
+    content: "";
+    bottom: 0;
+    height: 1px;
+    left: 15%;
+    width: 70%;
+}
+.skill-bar span {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    height: 1px;
+    display: inline-block;
+}
+
+.skill-bar span {
+    -webkit-animation: w70 1.5s ease-out forwards;
+}
+.skill-bar .w70 {
+    width: 22%;
+}
+
+@-webkit-keyframes w70 {
+    from { width: 0%; }
+    to { width: 100%; }
 }
