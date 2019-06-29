@@ -23,7 +23,7 @@ body {
 .text-vertical-center {
     text-align: center;
     /* vertical-align: middle; */
-    padding-top: 100px; /* 300 */
+    padding-top: 150px;
 }
 
 .text-vertical-center h1 {
@@ -84,11 +84,12 @@ hr.small {
 /* Header */
 .main-header h1 {
     position: relative;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
+    padding-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .call-to-action-header h3 {
+
     font-style: italic;
     position: relative;
     padding-bottom: 20px;
