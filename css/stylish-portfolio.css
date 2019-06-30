@@ -236,13 +236,17 @@ section#photography-samples .container {
     to { width: 100%; }
 }
 
+.text-primary {
+   text-shadow: 1px 0 0 #337ab7;
+}
+
 .typewriter .lets-build-things {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   animation: 
-    typing 45s steps(100, end),
+    typing 6s steps(100, end),
     blink-caret .75s step-end infinite;
 }
 
