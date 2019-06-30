@@ -242,7 +242,7 @@ section#photography-samples .container {
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   animation: 
-    typing 5.5s steps(70, end),
+    typing 45s steps(100, end),
     blink-caret .75s step-end infinite;
 }
 
