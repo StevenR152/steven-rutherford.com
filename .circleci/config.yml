@@ -2,7 +2,7 @@ version: 2
 jobs:
   deploy:
     docker:
-      - image: circleci/python:2.7-jessie
+      - image: circleci/python:latest
     steps:
       - checkout
       - run:
