@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: Build Docusaurus Static Page
-          command: cd website && yarn install && yarn run build
+          command: yarn install && yarn run build
       - run:
           name: Install awscli
           command: sudo pip install awscli
