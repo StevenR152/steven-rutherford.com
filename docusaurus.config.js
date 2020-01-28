@@ -2,7 +2,7 @@ const fs = require('fs');
 
 var siteConfig = {
   title: 'Steven Rutherford',
-  tagline: 'The tagline of my site',
+  tagline: 'Senior Backend Engineer / Tech Lead - Java Microservices, K8s, Devops, AWS Infrastructure, CI/CD',
   url: 'http://steven-rutherford.com/docusaurus-v2',
   baseUrl: '/docusaurus-v2/',
   favicon: 'img/favicon.ico',
