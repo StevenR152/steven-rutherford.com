@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 var siteConfig = {
   title: 'Steven Rutherford',
   tagline: 'The tagline of my site',
