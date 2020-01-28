@@ -1,16 +1,16 @@
-module.exports = {
+var siteConfig = {
   title: 'Steven Rutherford',
   tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://steven-rutherford.com/docusaurus-v2',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Steven Rutherford', // Usually your GitHub org/user name.
+  projectName: 'steven-rutherford.com', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Steven Rutherford',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Steven Rutherford',
         src: 'img/logo.svg',
       },
       links: [
@@ -89,3 +89,12 @@ module.exports = {
     ],
   ],
 };
+
+
+if (fs.existsSync('./.local')) {
+    console.log('We are in local mode');
+    siteConfig.baseUrl = '/';
+    siteConfig.url = '/';
+} 
+
+module.exports = siteConfig;
