@@ -20,7 +20,4 @@ workflows:
   version: 2
   build:
     jobs:
-      - deploy-website:
-          filters:
-            branches:
-              only: /master/
+      - deploy-website
