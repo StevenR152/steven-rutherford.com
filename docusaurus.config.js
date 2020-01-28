@@ -3,8 +3,8 @@ const fs = require('fs');
 var siteConfig = {
   title: 'Steven Rutherford',
   tagline: 'The tagline of my site',
-  url: 'https://steven-rutherford.com/docusaurus-v2',
-  baseUrl: '/',
+  url: 'https://steven-rutherford.com/docusaurus-v2/',
+  baseUrl: 'https://steven-rutherford.com/docusaurus-v2/',
   favicon: 'img/favicon.ico',
   organizationName: 'Steven Rutherford', // Usually your GitHub org/user name.
   projectName: 'steven-rutherford.com', // Usually your repo name.
