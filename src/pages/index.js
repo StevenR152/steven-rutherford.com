@@ -12,7 +12,7 @@ const features = [
     imageUrl: 'img/logo.jpg',
     description: (
       <>
-        I'm a kiwi born and bread, have explored over 30 countries. When I'm needing a break from the tech scene, I love to get out hiking in nature.
+        I'm a kiwi born and bred, have explored over 30 countries. When I'm needing a break from the tech scene, I love to get out hiking in nature.
       </>
     ),
   },
