@@ -2,7 +2,7 @@ const fs = require('fs');
 
 var siteConfig = {
   title: 'Steven Rutherford',
-  tagline: 'Senior Backend Engineer / Tech Lead - Java Microservices, K8s, Devops, AWS Infrastructure, CI/CD',
+  tagline: 'Senior Backend Engineer / Tech Lead - Java Microservices, K8s, DevOps, AWS Infrastructure, CI/CD',
   url: 'http://steven-rutherford.com/docusaurus-v2',
   baseUrl: '/docusaurus-v2/',
   favicon: 'img/favicon.ico',
@@ -13,7 +13,7 @@ var siteConfig = {
       title: 'Steven Rutherford',
       logo: {
         alt: 'Steven Rutherford',
-        src: 'img/logo.svg',
+        src: 'img/logo.jpg',
       },
       links: [
         {
@@ -34,50 +34,34 @@ var siteConfig = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Learning Tech',
           items: [
             {
-              label: 'Style Guide',
+              label: 'Want to Learn Tech?',
               to: 'docs/doc1',
-            },
-            {
-              label: 'Second Doc',
-              to: 'docs/doc2',
-            },
+            }
           ],
         },
         {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
+              label: 'Blog',
+              to: 'blog',
+            }
           ],
         },
         {
-          title: 'Social',
+          title: 'Developer',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
+              href: 'https://github.com/StevenR152',
+            }
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Steven Rutherford.`,
     },
   },
   presets: [

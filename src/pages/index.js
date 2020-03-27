@@ -8,32 +8,29 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: <>Easy to Use</>,
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: <>Who am I?</>,
+    imageUrl: 'img/logo.jpg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        I'm a kiwi born and bread, have explored over 30 countries. When I'm needing a break from the tech scene, I love to get out hiking in nature.
       </>
     ),
   },
   {
-    title: <>Focus on What Matters</>,
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: <>What do I do?</>,
+    imageUrl: 'img/techstack.png',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        My professional technology toolkit focuses on Java, Microservices Architecture, AWS, Terraform, Docker, Kubernetes and Jenkins/CircleCI. But I've hacked about in other scripts as projects require.
       </>
     ),
   },
   {
-    title: <>Powered by React</>,
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: <>Want to learn tech?</>,
+    imageUrl: 'img/codersmeetup.PNG',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        I supplement my professional career with teaching, having organised a 1200+ member meetup.com group called CodersUK helping people navigate their tech career and grow in hands on learning workshops.
       </>
     ),
   },
@@ -72,7 +69,15 @@ function Home() {
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/doc1')}>
-              Get Started
+              Learn Tech
+            </Link>
+            <Link
+              className={classnames(
+                'button button--outline button--secondary button--lg',
+                styles.getStarted,
+              )}
+              to={useBaseUrl('docs/doc1')}>
+              Read my blog
             </Link>
           </div>
         </div>
