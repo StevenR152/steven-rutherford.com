@@ -3,8 +3,8 @@ const fs = require('fs');
 var siteConfig = {
   title: 'Steven Rutherford',
   tagline: 'Senior Backend Engineer / Tech Lead - Java Microservices, K8s, DevOps, AWS Infrastructure, CI/CD',
-  url: 'http://steven-rutherford.com/docusaurus-v2',
-  baseUrl: '/docusaurus-v2/',
+  url: 'http://steven-rutherford.com',
+  baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'StevenR152', // Usually your GitHub org/user name.
   projectName: 'stevenrutherford.com', // Usually your repo name.
