@@ -1,0 +1,41 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #1e76a2;
+  --ifm-color-primary-dark: #1b6a92;
+  --ifm-color-primary-darker: #19648a;
+  --ifm-color-primary-darkest: #155371;
+  --ifm-color-primary-light: #2182b2;
+  --ifm-color-primary-lighter: #2288ba;
+  --ifm-color-primary-lightest: #2799d3;
+  --ifm-code-font-size: 95%;
+}
+.button.button--secondary.button--outline:not(.button--active):not(:hover) {
+  color: white;
+}
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+.heroBanner_src-pages- {
+    padding: 2rem 0;
+}
+
+section.features_src-pages- {
+  padding: 4rem;
+}
+
+.features_src-pages- .featureImage_src-pages-{
+  box-shadow: 2px 2px 37px #ccc;
+}
+.features_src-pages- h3 {
+  margin-top: 45px;
+}

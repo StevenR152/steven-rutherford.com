@@ -1,22 +1,23 @@
 version: 2
 jobs:
-  deploy:
+  deploy-website:
     docker:
-      - image: circleci/python:latest
+      - image: circleci/python:latest-node
+
     steps:
       - checkout
       - run:
-          name: Branch name
-          command: echo "${CIRCLE_BRANCH}"
+          name: Build Docusaurus Static Page
+          command: yarn install && yarn run build
       - run:
           name: Install awscli
           command: sudo pip install awscli
       - run:
           name: Deploy to S3 bucket
-          command: aws s3 sync . s3://steven-rutherford.com/${CIRCLE_BRANCH} --exclude '.circleci/*' --exclude '.git/*'  
+          command: aws s3 sync ./build/ s3://steven-rutherford.com/${CIRCLE_BRANCH}
 
 workflows:
   version: 2
-  build-deploy:
+  build:
     jobs:
-      - deploy
+      - deploy-website
