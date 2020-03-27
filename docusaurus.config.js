@@ -16,12 +16,6 @@ var siteConfig = {
         src: 'img/logo.jpg',
       },
       links: [
-        {
-          to: 'docs/doc1',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
-        },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
