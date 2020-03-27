@@ -2,7 +2,7 @@ const fs = require('fs');
 
 var siteConfig = {
   title: 'Steven Rutherford',
-  tagline: 'Senior Backend Engineer / Tech Lead - Java Microservices, K8s, DevOps, AWS Infrastructure, CI/CD',
+  tagline: 'Senior Engineer - Java Microservices, K8s, DevOps, AWS, Infrastructure as Code, CI/CD',
   url: 'http://steven-rutherford.com',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
