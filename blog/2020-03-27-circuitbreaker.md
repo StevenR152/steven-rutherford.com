@@ -9,7 +9,9 @@ tags: [circuitbreaker, architecture, "design patterns", "site reliability", "eng
 ---
 
 ### What is the Circuit Breaker Pattern?
-The name of this pattern is adopted from eletrical engineering. In this field a circuit breaker is an automatically operated electrical switch designed to protect an electrical circuit. Essentially if too much power goes through, the circuit triggers to break the loop. The circuit breaker pattern in software architecture is similarly an automated control mechanism to actively cut off a part of your system from the rest to preserve the integrity of the system or give a consistent customer experience. 
+The name of this pattern is adopted from eletrical engineering. In this field a circuit breaker is an automatically operated electrical switch designed to protect an electrical circuit. Essentially if too much power goes through, the circuit triggers to break the loop. 
+
+The circuit breaker pattern in software architecture is similarly an automated control mechanism to actively cut off a part of your system from the rest to preserve the integrity of the system or give a consistent customer experience. 
 
 ### When would I want to use the Circuit Breaker Pattern?
 If you system relies heavily on another system and that system meets a few key characteristics you cannot control:
@@ -19,10 +21,11 @@ If you system relies heavily on another system and that system meets a few key c
 
 ### Give me details, does an implementation of Circuit Breaker work?
 Essentially this can be setup using any metrics, when a percentage of those metrics show bad form, prevent future requests.
-In practice it's usually: 
+In practice it's usually looks at: 
 * Given we have at least R number of requests over period of time T, make sure at least P percentage of requests came back successfully. 
 * If this isn't met, the circuit gets set as open, meaning all future requests should automatically be rejected for a time window W.
 * After time window W has happened send a few requests through to the malfunctioning system and determine if its meeting P percentage of successful requests before closing the circuit again.
+* Constantly produce metrics throughout this process for 3rd party monitoring and alerting tools to hook into.
 
 ### How do I implement the circuit breaker pattern?
 You should not be writing your own implementation of this pattern (and possibly all patterns) as its very complicated, but should leverage a library. In Java the Netflix Hystrix library adds the circuitbreaker and manages the complexities of:
