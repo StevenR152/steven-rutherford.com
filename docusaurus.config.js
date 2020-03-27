@@ -6,8 +6,8 @@ var siteConfig = {
   url: 'http://steven-rutherford.com/docusaurus-v2',
   baseUrl: '/docusaurus-v2/',
   favicon: 'img/favicon.ico',
-  organizationName: 'Steven Rutherford', // Usually your GitHub org/user name.
-  projectName: 'steven-rutherford.com', // Usually your repo name.
+  organizationName: 'StevenR152', // Usually your GitHub org/user name.
+  projectName: 'stevenrutherford.com', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Steven Rutherford',
@@ -16,7 +16,12 @@ var siteConfig = {
         src: 'img/logo.svg',
       },
       links: [
-        {to: 'docs/doc1', label: 'Docs', position: 'left'},
+        {
+          to: 'docs/doc1',
+          activeBasePath: 'docs',
+          label: 'Docs',
+          position: 'left',
+        },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
