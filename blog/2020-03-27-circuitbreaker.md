@@ -19,7 +19,7 @@ If you system relies heavily on another system and that system meets a few key c
 * Your system isn't handling the slow down well as connection pools, threads and other resources are blocked up waiting.
 * You would rather prevent further calls from happening than have this degraded performance wripple through your system.
 
-### Give me details, does an implementation of Circuit Breaker work?
+### Give me details, how does an implementation of Circuit Breaker work?
 Essentially this can be setup using any metrics, when a percentage of those metrics show bad form, prevent future requests.
 In practice it's usually looks at: 
 * Given we have at least R number of requests over period of time T, make sure at least P percentage of requests came back successfully. 
