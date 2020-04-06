@@ -17,6 +17,9 @@ jobs:
       - run: 
           name: Copy Coders Exercises
           command: cp -r ~/CodersUK-Website/docs ~/project/
+      - run: 
+          name: Copy Coders Exercises
+          command: cp -r ~/CodersUK-Website/website/static/img ~/project/static/img
       - run:
           name: Build Docusaurus Static Page
           command: yarn install && yarn run build
