@@ -16,7 +16,7 @@ jobs:
             git clone git@github.com:StevenR152/CodersUK-Website.git ~/CodersUK-Website
       - run: 
           name: Copy Coders Exercises
-          command: cp ~/CodersUK-Website/docs ~/project/
+          command: cp -r ~/CodersUK-Website/docs ~/project/
       - run:
           name: Build Docusaurus Static Page
           command: yarn install && yarn run build
