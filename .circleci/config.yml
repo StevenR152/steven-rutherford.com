@@ -13,7 +13,7 @@ jobs:
           name: Clone codersuk repository
           command: >-
             GIT_SSH_COMMAND='ssh -i ~/.ssh/id_rsa_fingerprint'
-            git clone git@github.com:StevenR152/CodersUK-Website.git ~/CodersUK-Website
+            git clone --depth 1 git@github.com:StevenR152/CodersUK-Website.git ~/CodersUK-Website
       - run: 
           name: Copy Coders Exercises
           command: cp -r ~/CodersUK-Website/docs ~/project/
