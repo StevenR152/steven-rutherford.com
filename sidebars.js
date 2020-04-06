@@ -1,7 +1,7 @@
 module.exports = {
   someSidebar: {
     "Tutorials": [
-      "overview-of-codersuk-exercises",
+      "overview-of-tutorial-exercises",
       "aws-account-best-practices",
       "shared/introduction-to-continuous-delivery",
     ],
