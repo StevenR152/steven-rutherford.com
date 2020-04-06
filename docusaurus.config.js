@@ -17,6 +17,7 @@ var siteConfig = {
       },
       links: [
         {to: 'blog', label: 'Blog', position: 'left'},
+        {to: 'docs', label: 'Tutorials', position: 'left'},
         {
           href: 'https://github.com/StevenR152',
           label: 'GitHub',
