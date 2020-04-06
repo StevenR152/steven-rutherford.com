@@ -65,8 +65,6 @@ var siteConfig = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl:
-            'https://github.com/StevenR152/steven-rutherford.com/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
