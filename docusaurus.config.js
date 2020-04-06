@@ -17,7 +17,7 @@ var siteConfig = {
       },
       links: [
         {to: 'blog', label: 'Blog', position: 'left'},
-        {to: 'docs', label: 'Tutorials', position: 'left'},
+        {doc: 'overview-of-tutorial-exercises', label: 'Tutorials', position: 'left'},
         {
           href: 'https://github.com/StevenR152',
           label: 'GitHub',
@@ -33,7 +33,7 @@ var siteConfig = {
           items: [
             {
               label: 'Want to Learn Tech?',
-              to: 'docs/doc1',
+              doc: 'docs/overview-of-tutorial-exercises',
             }
           ],
         },
