@@ -19,7 +19,7 @@ jobs:
           command: cp -r ~/CodersUK-Website/docs ~/project/
       - run: 
           name: Copy Coders Static Resources
-          command: cp -r ~/CodersUK-Website/website/static ~/project/static
+          command: cp -r ~/CodersUK-Website/website/static ~/project/
       - run:
           name: Build Docusaurus Static Page
           command: yarn install && yarn run build
