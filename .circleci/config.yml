@@ -6,6 +6,17 @@ jobs:
 
     steps:
       - checkout
+      - add_ssh_keys:
+          fingerprints:
+            - "bb:9c:c0:ac:0d:f2:de:d8:b9:62:4f:4d:6c:84:a3:1e"
+      - run:
+          name: Clone codersuk repository
+          command: >-
+            GIT_SSH_COMMAND='ssh -i ~/.ssh/id_rsa_fingerprint'
+            git clone git@github.com:StevenR152/CodersUK-Website.git ~/CodersUK-Website
+      - run: 
+          name: Copy Coders Exercises
+          command: ls ~
       - run:
           name: Build Docusaurus Static Page
           command: yarn install && yarn run build
