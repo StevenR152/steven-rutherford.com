@@ -133,4 +133,4 @@ jobs:
 * [https://about.gitlab.com/stages-devops-lifecycle/continuous-integration/](https://about.gitlab.com/stages-devops-lifecycle/continuous-integration/)
 
 #### Resources
-[Learn Terraform from my tutorial](http://steven-rutherford.com/docs/tracks/devops/introduction-to-infrastructure-as-code)
+* [Learn Terraform from my tutorial](http://steven-rutherford.com/docs/tracks/devops/introduction-to-infrastructure-as-code)
