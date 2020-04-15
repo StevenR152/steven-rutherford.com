@@ -8,6 +8,7 @@ var siteConfig = {
   favicon: 'img/favicon.ico',
   organizationName: 'StevenR152', // Usually your GitHub org/user name.
   projectName: 'stevenrutherford.com', // Usually your repo name.
+  plugins: ['@docusaurus/plugin-google-analytics'],
   themeConfig: {
     navbar: {
       title: 'Steven Rutherford',
@@ -57,6 +58,9 @@ var siteConfig = {
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Steven Rutherford.`,
+    },
+    googleAnalytics: {
+      trackingID: 'UA-163692629-1',
     },
   },
   presets: [
