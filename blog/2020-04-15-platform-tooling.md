@@ -5,7 +5,7 @@ author: Steven Rutherford
 author_title: Senior Backend Engineer
 author_url: https://github.com/stevenr152
 author_image_url: https://avatars0.githubusercontent.com/u/2215023?v=4
-tags: [ansible, terraform,, circleci, "platform engineering", "deployment", "DevOps"]
+tags: [ansible, terraform, circleci, "platform engineering", "deployment", "DevOps"]
 ---
 
 ### Demystifying the puzzle of fitting Platform tools together.
