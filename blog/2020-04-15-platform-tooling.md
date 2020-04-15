@@ -51,7 +51,7 @@ His friend Bob has heard of Terraform, Ansible and CircleCI in his previous job,
 #### Step 1: Get a machine
 He looks up terraform to write an Infrastructure request in code:
 
-_Note: the detail in the code doesn't matter, but meaning behind it is provide me an AWS Ubuntu Machine_
+_Note: the detail in the code doesn't matter, but meaning behind it is provide him an AWS Ubuntu Machine_
 
 Once he runs this using terraform he'll have a machine in the cloud.
 ```terraform
@@ -95,7 +95,10 @@ He copies this script onto the machine and runs it to install java onto the mach
 He know the machine is ready to run the application, but how to get the application from Github code onto the machine.
 He finds that CircleCI looks a great simple task runner - a Continuous Integration tool.
 As he clicks through the setup guide, CircleCI provides him the configuration he needs - and he thinks this is fantastic!
-Looking confusingly at it he can see the jobs section defines a job called "deploy" this goes through steps of checking out code, and bundles that code up. From here he'll just need to workout the steps required to deploy the code to his machine in the cloud - which will be custom depending on the companies security mechanisms so he'll have to liase with Gary.
+
+_Note: the detail in the configuration doesn't matter, you can see the second half has the jobs section defining a job called "deploy" this goes through steps of checking out code, and bundles that code up.
+
+From here he'll still need to workout the steps required to deploy the code to his machine in the cloud - which will be custom depending on the companies security mechanisms so he'll have to liase with Gary.
 ```CircleCI
 version: 2.1
 orbs:
