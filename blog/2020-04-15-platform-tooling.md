@@ -9,7 +9,7 @@ tags: [ansible, terraform,, circleci, "platform engineering", "deployment", "Dev
 ---
 
 ### Demystifying the puzzle of fitting Platform tools together.
-Terraform, Ansible, Puppet, CircleCI, Jenkins.... and so you're mistified how they all fit together?
+You've heard of the following: Terraform, Ansible, Travis, Puppet, Gitlab, CircleCI, Jenkins.... and so you're mistified how they all fit together and why we use them?
 
 ### Firstly what are developers trying to achieve with these tools in the combination they choose to use?
 You need to run your software on a machine somewhere, how to get that machine?
