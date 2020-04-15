@@ -1,5 +1,5 @@
 ---
-id: circuitbreaker
+id: circuit-breaker
 title: Circuit Breaker Pattern
 author: Steven Rutherford
 author_title: Senior Backend Engineer
