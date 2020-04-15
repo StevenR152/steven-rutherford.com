@@ -12,15 +12,16 @@ tags: [ansible, terraform, circleci, "platform engineering", "deployment", "DevO
 You've heard of those tools and so you're mistified how they all fit together and why we use them? Read on.
 
 ### Firstly what are developers trying to achieve with these tools in the combination they choose to use?
-You need to run your software on a machine somewhere, how to get that machine?
-You need that machine to have the right software installed, how to install that software?
-You need your application built, tested and deployed along side the software you use, how to do this?
+* You need to run your software on a machine somewhere, how to get that machine?
+* You need that machine to have the right software installed, how to install that software?
+* You need your application built, tested and deployed along side the software you use, how to do this?
 
 In combination these questions are together: How do I automate the process of obtaining machines, installing software and deploying my application so I write this process once, then its setup forever.
 
 ### What is each of these?
 #### Terraform / Cloudformation / Serverless (framework)
 _ToolSet Mission: They allows you to obtain infrastructure resources._
+
 These are grouped together under the name of Infrastructure as code tools.
 They allows you to obtain infrastructure resources. 
 In the good old days a Operations team member would ring up / email for a server to be installed in the datacenter they use. 
@@ -28,6 +29,7 @@ Since the advent of the cloud the server is already available in the cloud, Infr
 
 #### Ansible / Chef / Puppet
 _ToolSet Mission: They allows you to reliably and repeatibly install software onto infrastructure resources._
+
 Are configuration management tools but what is this?
 So you have a machine, how do you install Java, Ruby, PHP or whatever else you need on it reliably and repeatibly? You could write a bash script, or you could write ansible configuration management.
 If you know Bash scripting a little, its hard to deal with failure, for example when the Java download you are obtaining fails halfway because the network cuts out. You might think, that wont happen often but at scale this is a frequent problem.
@@ -35,6 +37,7 @@ At scale you have tens or hundreds or thousands of machines spin up and automate
 
 #### CircleCI / Jenkins / TravisCI / ConcourseCI / GitlabCI ...
 _ToolSet Mission: They allows you to run tasks - usually the multiple steps to deploy your software._
+
 So if you've requested your machine with Infrastructure as code, and Installed Java onto it using Configuration management how do you get your application installed?
 You want to use a Continuous Integration tool, AKA a Task Runner to do multiple steps required to deploy it.
 Every time you commit to master (or tag it for production it whatever way you feel is right), you want it automatically promoted into your server.
