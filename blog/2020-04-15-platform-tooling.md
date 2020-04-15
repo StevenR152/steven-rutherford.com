@@ -20,18 +20,18 @@ In combination these questions are together: How do I automate the process of ob
 
 ### What is each of these?
 #### Terraform / Cloudformation / Serverless (framework)
-_ToolSet Mission: They allows you to obtain infrastructure resources._
+_ToolSet Mission: They allow you to obtain infrastructure resources._
 
 These are grouped together under the name of Infrastructure as code tools.
 They allows you to obtain infrastructure resources. 
-In the good old days a Operations team member would ring up / email for a server to be installed in the datacenter they use. 
+In the good old days an Operations team member would ring up / email for a server to be installed in the datacenter they use. 
 Since the advent of the cloud the server is already available in the cloud, Infrastructure as Code tools are an suite of automation tools to allow you to write code and get a cloud resource like a machine provided to you.
 
 #### Ansible / Chef / Puppet
 _ToolSet Mission: They allows you to reliably and repeatibly install software onto infrastructure resources._
 
-Are configuration management tools but what is this?
-So you have a machine, how do you install Java, Ruby, PHP or whatever else you need on it reliably and repeatibly? You could write a bash script, or you could write ansible configuration management.
+Are considered Configuration Management tools but what is this you might ask?
+So once you have a machine, how do you install Java, Ruby, PHP or whatever else you need on it reliably and repeatibly? You could write a bash script, or you could write ansible configuration management.
 If you know Bash scripting a little, its hard to deal with failure, for example when the Java download you are obtaining fails halfway because the network cuts out. You might think, that wont happen often but at scale this is a frequent problem.
 At scale you have tens or hundreds or thousands of machines spin up and automate the install of software onto, with this many machines the likelihood of failure to download a package of software you need increases and you need to handle failure better, ansible handles this.
 
