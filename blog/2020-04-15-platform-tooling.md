@@ -1,5 +1,5 @@
 ---
-id: platformtoolsdemystified
+id: demystifing-platform-tools
 title: Demystifying the puzzle of fitting Platform tools together.
 author: Steven Rutherford
 author_title: Senior Backend Engineer
