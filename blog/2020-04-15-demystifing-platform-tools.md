@@ -1,6 +1,6 @@
 ---
 id: demystifing-platform-tools
-title: Demystifying the puzzle of fitting Platform tools together.
+title: Demystifying Platform Tools
 author: Steven Rutherford
 author_title: Senior Backend Engineer
 author_url: https://github.com/stevenr152
