@@ -50,6 +50,10 @@ His friend Bob has heard of Terraform, Ansible and CircleCI in his previous job,
 
 #### Step 1: Get a machine
 He looks up terraform to write an Infrastructure request in code:
+
+_Note: the detail in the code doesn't matter, but meaning behind it is provide me an AWS Ubuntu Machine_
+
+Once he runs this using terraform he'll have a machine in the cloud.
 ```terraform
 # Get a Ubuntu Machine image
 data "aws_ami" "ubuntu" {
@@ -72,10 +76,13 @@ resource "aws_instance" "web" {
   }
 }
 ```
-Once he runs this using terraform he'll have a machine in the cloud.
 
 #### Step 2 Install software onto machine
 Now he look up the documentation to finds how to install Java onto that machine using Ansible:
+
+_Note: the detail in the code doesn't matter, but meaning behind it is download the Ruby 2.0 latest package and install it.
+
+He copies this script onto the machine and runs it to install java onto the machine.
 ```Ansible
 - name: Latest version of Ruby is installed
   apt: pkg={{ item }} state=latest
@@ -83,7 +90,6 @@ Now he look up the documentation to finds how to install Java onto that machine 
     - ruby2.0
     - ruby2.0-dev
 ```
-He copies this script onto the machine and runs it to install java onto the machine.
 
 #### Step 3 Deploy the application
 He know the machine is ready to run the application, but how to get the application from Github code onto the machine.
