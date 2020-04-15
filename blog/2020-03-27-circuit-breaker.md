@@ -20,7 +20,7 @@ If you system relies heavily on another system and that system meets a few key c
 * You would rather prevent further calls from happening than have this degraded performance wripple through your system.
 
 For example if your website is trying to place deliveries to a location, but the address lookup is handled externally to your organisation.
-![alt text](img/blog/circuitbreaker.png "Circuit Breaker Example")
+![alt text](/img/blog/circuitbreaker.png "Circuit Breaker Example")
 
 ### Give me details, how does an implementation of Circuit Breaker work?
 Essentially this can be setup using any metrics, when a percentage of those metrics show bad form, prevent future requests.
