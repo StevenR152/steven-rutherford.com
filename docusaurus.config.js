@@ -63,7 +63,7 @@ var siteConfig = {
       trackingID: 'UA-163692629-1',
     },
   },
-  scripts: ['mailer.js'],
+  scripts: ['/js/mailer.js'],
   presets: [
     [
       '@docusaurus/preset-classic',
