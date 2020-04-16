@@ -1,7 +1,7 @@
 ---
 id: subscribe-to-updates
 sidebar_label: Email subscription
-title: Email subscription for blog updates and tutorials.
+title: Let me reach out for new updates.
 ---
 
 <div class="ml-form-embed"
