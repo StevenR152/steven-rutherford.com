@@ -8,10 +8,12 @@ author_image_url: https://avatars0.githubusercontent.com/u/2215023?v=4
 tags: [craftyjs, web, "game development"]
 ---
 
-### The beginning of my game development journey?
+### Where my journey began?
 Winding back time through my several completed laps of the sun (birthdays) a primary school librarian introduced me to computer games, a world as exciting as middle-earth is to Frodo but all running on a now-iconic floppy disk from your living room.
 
-After graduating I frequently tried and failed larger game adventures, but have now settled on short prototypical adventures in the game creation world; to keep the work, life, socializing, hiking and game dev pentagon balanced. Instead of spending an evening a week every week, I instead devote a few weekends a year to build a new game from scratch as an entrant in Ludum Dare.
+After graduating I frequently tried and failed larger game adventures, but have now settled on short prototypical adventures in the game creation world; to keep the work, life, socializing, hiking and game dev pentagon balanced. 
+
+Instead of spending an evening a week every week, I instead devote a few weekends a year to build a new game from scratch as an entrant in Ludum Dare.
 
 ### My discovery of Ludum dare
 Back in 2012 I had a University Tutor encourage me to make games on an upcoming weekend, I was dubious with university workload but the free pizza helped the student budget. In the true student spirit of "leave no pizza behind" I signed up naive to the total amount of sleep I was about to lose, I unfold on the unexpected journey of my first Ludum Dare; a tiresome journey much like that to Mount Doom filled with beauty, and many battles.
@@ -29,11 +31,18 @@ https://ldjam.com/events/ludum-dare/rules
 
 ### The framework I use?
 Unity - NO, Unreal - NO, CraftyJS - Yes!
+
+http://craftyjs.com/
+
 Why I don't use Unity/Unreal but choose the JS library CraftyJS instead?
+- Pure code, there is not fancy UI. 
+- I'm always coding, but the UI controls are forgotten between my 6 monthly game development projects.
+- The framework is web focused, so highly playable for the community voting in ludum dare.
+- The framework is small, less than 100 classes to be familiar, with clean docs.
+- The team I enter with is usually beginners, or people without the experience required for unity/unreal.
 
-Pure code, there is not fancy UI. When you have a 6-month break between each game the professional development tools are hard to keep familiar with, but as a developer Crafty is perfect, If can't remember its small, and with great docs and with the perfect project hackers language - javascript. 
-
-But hang on, wouldn't that limit your usefulness in the industry if you wanted to join? Not so much, the underlying concepts are shared across most of the game industry.
+But hang on, wouldn't that limit your usefulness in the industry if you wanted to join? 
+Not so much, the underlying concepts are shared across most of the game industry.
 
 ### Forming the fellowship.
 Let's build a fellowship of... you guessed it nine members set on a quest to destroy one ring.
@@ -74,12 +83,12 @@ class MovementUpdateSystem {
 Now when you build our the rest of your fellowship; be it your Legolas or Gimli simply defining they have both the PositionComponent and MovementComponent means the System will update their position within the world.
 
 Let's think at scale:
-RenderSystem needs: RenderComponent, PositionComponent
-AttackSystem needs: PositionComponent, StaffComponent (or other Weapons)
-MovementSystem needs: PositionComponent and MovementComponent
+- RenderSystem needs: RenderComponent, PositionComponent
+- AttackSystem needs: PositionComponent, StaffComponent (or other Weapons)
+- MovementSystem needs: PositionComponent and MovementComponent
 
 ### How do you start building your own Hobbits sized adventure?
-http://craftyjs.com/getting-started/
-http://steven-rutherford.com/docs/tracks/gamedevelopment/introduction-to-web-game-development
+- http://craftyjs.com/getting-started/
+- http://steven-rutherford.com/docs/tracks/gamedevelopment/introduction-to-web-game-development
 
 
