@@ -15,10 +15,10 @@ After graduating I frequently tried and failed larger game adventures, but have 
 
 Instead of spending an evening a week every week, I instead devote a few weekends a year to build a new game from scratch as an entrant in Ludum Dare.
 
-### My discovery of Ludum dare
+### My first trip to the world of Ludum Dare 
 Back in 2012 I had a University Tutor encourage me to make games on an upcoming weekend, I was dubious with university workload but the free pizza helped the student budget. In the true student spirit of "leave no pizza behind" I signed up naive to the total amount of sleep I was about to lose, I unfold on the unexpected journey of my first Ludum Dare; a tiresome journey much like that to Mount Doom filled with beauty, and many battles.
 
-### So what is Ludum dare?
+### So what is this Ludum dare world?
 Ludum Dare is an event where you:
 - Create a game from scratch in a weekend based on a theme.
 - Themes are suggested and chosen by the community. 
@@ -29,7 +29,7 @@ Ludum Dare is an event where you:
 
 https://ldjam.com/events/ludum-dare/rules
 
-### The framework I use?
+### I give you my axe, I give you my bow, I give you my CraftyJS.
 Unity - NO, Unreal - NO, CraftyJS - Yes!
 
 http://craftyjs.com/
@@ -42,7 +42,7 @@ Why I don't use Unity/Unreal but choose the JS library CraftyJS instead?
 - The team I enter with is usually beginners, or people without the experience required for unity/unreal.
 
 But hang on, wouldn't that limit your usefulness in the industry if you wanted to join? 
-Not so much, the underlying concepts are shared across most of the game industry.
+Not so much, the underlying concepts are shared across most of the game industry, your groundwork is there with the UI familiarity to come via some tutorials.
 
 ### Forming the fellowship.
 Let's build a fellowship of... you guessed it nine members set on a quest to destroy one ring.
