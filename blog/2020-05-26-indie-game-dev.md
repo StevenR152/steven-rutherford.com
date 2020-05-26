@@ -29,7 +29,7 @@ Ludum Dare is an event where you:
 
 https://ldjam.com/events/ludum-dare/rules
 
-### I give you my axe, I give you my bow, I give you my CraftyJS.
+### I give you my axe, I give you my bow, I give you CraftyJS.
 Lets use Unity - NO!
 Lets use Unreal - NO!
 CraftyJS - Yes!
