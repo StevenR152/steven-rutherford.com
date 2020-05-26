@@ -8,7 +8,7 @@ author_image_url: https://avatars0.githubusercontent.com/u/2215023?v=4
 tags: [craftyjs, web, "game development"]
 ---
 
-# The beginning of my game development journey?
+### The beginning of my game development journey?
 Winding back time through my several completed laps of the sun (birthdays) a primary school librarian introduced me to computer games, a world as exciting as middle-earth is to Frodo but all running on a now-iconic floppy disk from your living room.
 
 After graduating I frequently tried and failed larger game adventures, but have now settled on short prototypical adventures in the game creation world; to keep the work, life, socializing, hiking and game dev pentagon balanced. Instead of spending an evening a week every week, I instead devote a few weekends a year to build a new game from scratch as an entrant in Ludum Dare.
@@ -29,15 +29,13 @@ https://ldjam.com/events/ludum-dare/rules
 
 ### The framework I use?
 Unity - NO, Unreal - NO, CraftyJS - Yes!
-Why I don't use Unity/Unreal but choose a tiny little JS library aptly named CraftyJS instead?
+Why I don't use Unity/Unreal but choose the JS library CraftyJS instead?
 
-Pure code, when you have a 6-month break between each game professional development tools are hard to keep familiar with, but as a developer Crafty is perfect, I can't remember its small, and with great docs and with the perfect project hackers language - javascript. 
+Pure code, there is not fancy UI. When you have a 6-month break between each game the professional development tools are hard to keep familiar with, but as a developer Crafty is perfect, If can't remember its small, and with great docs and with the perfect project hackers language - javascript. 
 
-But hang out, wouldn't that limit your usefulness in the industry if you wanted to join? Not so much, the underlying concepts are shared across most of the game industry.
+But hang on, wouldn't that limit your usefulness in the industry if you wanted to join? Not so much, the underlying concepts are shared across most of the game industry.
 
 ### Forming the fellowship.
-Entity - Component - System design pattern helps break down the world into the Entities made up of Components and Systems interested in updating the Components.
-
 Let's build a fellowship of... you guessed it nine members set on a quest to destroy one ring.
 
 You want to program an object class for each of them, each one can render to the screen move, swordfight, throw axes, shoot arrows, some cast magic, while others with the ability to trip over their own hobbit-sized feet.
@@ -45,23 +43,25 @@ You want to program an object class for each of them, each one can render to the
 You break into a dilemma, each fellow has its own characteristics they can move, swordfight, some shoot arrows etc. You fear each fellow will have a lot of duplicated code and seek a way to solve this. Let's explore some elven wisdom before we begin this coding journey.
 
 Enter the one formation to rule them all in the game industry: The design pattern Entity Component System.
+This design pattern helps break down the world into the Entities made up of Components and Systems interested in updating the Components.
 
 An entity is essentially an empty object, so lets form ourselves a Gandalf the Grey:
 ```
 var gandalf = new Entity();
 gandalf.addComponent(new ImageRenderComponent("gandalf.png));
 gandalf.addComponent(new PositionComponent({x: 10, y: 20}));
+gandalf.addComponent(new MovementComponent({x: 5, y: 5}));
 gandalf.addComponent(new HairComponent("grey"));
 gandalf.addComponent(new StaffComponent(100));
 ...many more awe inspiring components.
 ```
 
-So we have Gandalf but how does he work his magic, move fearlessly throughout the world?
+So we have Gandalf but how does he work his magic or move fearlessly throughout the world?
 We define a System that finds all game objects in the game based on a component and does actions on them.
 
 ```
 class MovementUpdateSystem {
-  var entitiesToMove = Game.getAllEntitiesWithComponents(PositionComponent, MovementComponent);
+  var entitiesToMove = GameEngine.getAllEntitiesWithComponents(PositionComponent, MovementComponent);
   foreach (entitiesToMove as entity) {
           var position = entity.getComponent(PositionComponent)
           var movement = entity.getComponent(MovementComponent)
@@ -71,14 +71,14 @@ class MovementUpdateSystem {
 }
 ```
 
-Now when you build our the rest of your fellowship; be it your Legolas or Gimli simply defining they have both the PositionComponent and MovementComponent means the System will update the position of the entity in the world. This code scales to as many entities that you require.
+Now when you build our the rest of your fellowship; be it your Legolas or Gimli simply defining they have both the PositionComponent and MovementComponent means the System will update their position within the world.
 
 Let's think at scale:
 RenderSystem needs: RenderComponent, PositionComponent
 AttackSystem needs: PositionComponent, StaffComponent (or other Weapons)
 MovementSystem needs: PositionComponent and MovementComponent
 
-# How do you start building your own Hobbits sized adventure?
+### How do you start building your own Hobbits sized adventure?
 http://craftyjs.com/getting-started/
 http://steven-rutherford.com/docs/tracks/gamedevelopment/introduction-to-web-game-development
 
