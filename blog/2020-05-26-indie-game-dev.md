@@ -27,7 +27,7 @@ Ludum Dare is an event where you:
 - The theme is revealed at the start of the event.
 - Games are submitted to 1 of 2 categories: the Jam (groups) or the Compo (solo).
 - Games are voted by you and the rest of the community.
-- Notch formed Minecraft from a Ludum Dare entry the community lived. 
+- Notch formed Minecraft from a Ludum Dare entry the community loved. 
 
 https://ldjam.com/events/ludum-dare/rules
 
